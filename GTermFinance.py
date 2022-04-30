@@ -17,8 +17,11 @@ G = "\033[0;32;40m"  # GREEN
 N = "\033[0m"  # Reset
 B = "\033[0;34;40m"  # Blue
 Y = '\033[0;33m'  # Yellow
+
 # Считываем индексы из файла и формируем список ссылок
 def getUrl():
+    global tickets
+    tickets = {}
     data = open('data.txt', 'r')  # Фаил индексов акий
     for i in data.read().split('\n'):
         if i != '':
@@ -41,7 +44,6 @@ def update_ticker():
           "UpdateTime", 'RangePerYear', 'Action', "   ~  "]
     table = PrettyTable(th)
     td = []
-
     # Получаем данные по ссылкам
     getUrl()
     for i in tqdm(tickets, bar_format='{l_bar}{bar:80}'):
@@ -104,7 +106,7 @@ def update_ticker():
         os.system("clear")
         print(B+"G"+R+'o'+Y+'o'+B+'g'+G+'l'+R+'e'+Y+" Finanse"+N+"\n Input settings: " + 
             "|"+B+"s"+N+"ell (price>"+str(sell_pr)+"%max)|" + " |"+G+"b"+N+"uy (price<min+"+str(buy_pr)+"%)|" + Y + " d"+N +" - set default \n"+
-            '                 '+'|'+Y+'a'+N+' - add new ticket|')
+              ' Tickets config: '+'|'+Y+'A'+N+' - add new ticket|'+' |'+Y+'D'+N+' - delete ticket|')
         print(table)
         cache = td
     update_ticker()
@@ -136,10 +138,29 @@ def UserInput():
                 print('Buy and Sell set to default')
                 sell_pr = 85
                 buy_pr = 45
-            case 'a':
+            case 'A':
                 data = open('data.txt', 'a')
-                data.write("\n"+input('Input ticker:').upper())
+                data.write("\n"+input('Input ticket:').upper())
                 data.close()
+            case "D":
+                ticketToDel = input('Input del ticket:').upper()
+                data = open('data.txt', 'r')
+                old_data = data.read()
+                data.close()
+                old_data = old_data.split('\n')
+                new_data = []
+                if ticketToDel in old_data:
+                    for i in old_data:
+                        if i !='' and i != ticketToDel:
+                            new_data.append(i)
+                    data = open('data.txt', 'w+')
+                    for i in new_data:
+                        data.write(i+'\n')
+                    data.close()
+                    new_data = []
+                    old_data = []
+                else:
+                    print('Nothing to del')
 
 thread_userinput = threading.Thread(target=UserInput, args=())
 thread_userinput.start()
