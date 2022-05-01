@@ -4,13 +4,17 @@ from prettytable import PrettyTable
 import os
 import datetime
 from tqdm import tqdm
-import threading
+import threading, time
 import getkey
 tickets = {}  # Список ссылок тикетов акций
 cache = []  # кэш значий акций предыдучей итерации
 buy_pr = 45
 sell_pr = 85
 
+select = 1
+table = None
+print_st = False
+print_st2 = True
 # Color
 R = "\033[0;31;40m"  # RED
 G = "\033[0;32;40m"  # GREEN
@@ -18,6 +22,11 @@ N = "\033[0m"  # Reset
 B = "\033[0;34;40m"  # Blue
 Y = '\033[0;33m'  # Yellow
 
+# Hat
+hat = str(B+"G"+R+'o'+Y+'o'+B+'g'+G+'l'+R+'e'+Y+" Finanse"+N+"\n Input settings: " +
+        "|"+B+"s"+N+"ell (price>"+str(sell_pr)+"%max)|" + " |"+G+"b"+N+"uy (price<min+"+str(buy_pr)+"%)|" + Y + " d"+N + " - set default \n" +
+      ' Tickets config: '+'|'+Y+'A'+N+' - add new ticket|'+' |'+Y+'D'+N+' - delete ticket| |select table: 1, 2, 3|')
+print(hat)   
 # Считываем индексы из файла и формируем список ссылок
 def getUrl():
     global tickets
@@ -38,7 +47,7 @@ headers = {
 
 # Функция обновления тикетов и построения таблици
 def update_ticker():
-    global cache
+    global cache, table, print_st
     # Формируем таблицу
     th = ["Name", "Price", "¤", "%",
           "UpdateTime", 'RangePerYear', 'Action', "   ~  "]
@@ -117,24 +126,15 @@ def update_ticker():
             i[6] = '    *    '
             table.add_row(i)
         x += 1
-        os.system("clear")
-        print(B+"G"+R+'o'+Y+'o'+B+'g'+G+'l'+R+'e'+Y+" Finanse"+N+"\n Input settings: " + 
-            "|"+B+"s"+N+"ell (price>"+str(sell_pr)+"%max)|" + " |"+G+"b"+N+"uy (price<min+"+str(buy_pr)+"%)|" + Y + " d"+N +" - set default \n"+
-              ' Tickets config: '+'|'+Y+'A'+N+' - add new ticket|'+' |'+Y+'D'+N+' - delete ticket|')
-        print(table)
-        cache = td
+    print_st = True
+    cache = td
+    time.sleep(2)
     update_ticker()
 
 
-# update ticket in thread
-threadUpdateTicket = threading.Thread(target=update_ticker, args=())
-threadUpdateTicket.start()
-
 # User input thread
-
-
 def UserInput():
-    global sell_pr, buy_pr
+    global sell_pr, buy_pr, select
     while True:
         key = getkey.getkey()
         match key:
@@ -175,6 +175,34 @@ def UserInput():
                     old_data = []
                 else:
                     print('Nothing to del')
+            case '1':
+                select = 1
+            case '2':
+                select = 2
 
+# Print table depending on select
+def printing():
+    global print_st, print_st2, table
+    while True:
+        time.sleep(1)
+        match select:
+            case 1:
+                if print_st:
+                    os.system("clear")
+                    print(hat)
+                    print(table)
+                    print_st = False
+            case 2:
+                if print_st2:
+                    os.system("clear")
+                    print(hat)
+                    print_st2 = False
+#Threads
 thread_userinput = threading.Thread(target=UserInput, args=())
 thread_userinput.start()
+# update ticket in thread
+threadUpdateTicket = threading.Thread(target=update_ticker, args=())
+threadUpdateTicket.start()
+# Printing thread
+printingThread = threading.Thread(target=printing, args=())
+printingThread.start()
