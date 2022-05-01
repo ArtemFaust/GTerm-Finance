@@ -4,17 +4,19 @@ from prettytable import PrettyTable
 import os
 import datetime
 from tqdm import tqdm
-import threading, time
+import threading
+import time
 import getkey
 tickets = {}  # Список ссылок тикетов акций
 cache = []  # кэш значий акций предыдучей итерации
 buy_pr = 45
 sell_pr = 85
 
-select = 1
+select = 1  # Select print table
 table = None
 print_st = False
 print_st2 = True
+
 # Color
 R = "\033[0;31;40m"  # RED
 G = "\033[0;32;40m"  # GREEN
@@ -24,10 +26,12 @@ Y = '\033[0;33m'  # Yellow
 
 # Hat
 hat = str(B+"G"+R+'o'+Y+'o'+B+'g'+G+'l'+R+'e'+Y+" Finanse"+N+"\n Input settings: " +
-        "|"+B+"s"+N+"ell (price>"+str(sell_pr)+"%max)|" + " |"+G+"b"+N+"uy (price<min+"+str(buy_pr)+"%)|" + Y + " d"+N + " - set default \n" +
-      ' Tickets config: '+'|'+Y+'A'+N+' - add new ticket|'+' |'+Y+'D'+N+' - delete ticket| |select table: 1, 2, 3|')
-print(hat)   
+          "|"+B+"s"+N+"ell (price>"+str(sell_pr)+"%max)|" + " |"+G+"b"+N+"uy (price<min+"+str(buy_pr)+"%)|" + Y + " d"+N + " - set default \n" +
+          ' Tickets config: '+'|'+Y+'A'+N+' - add new ticket|'+' |'+Y+'D'+N+' - delete ticket| |select table:' + Y+' 1, 2, 3'+N+'|')
+print(hat)
 # Считываем индексы из файла и формируем список ссылок
+
+
 def getUrl():
     global tickets
     tickets = {}
@@ -37,6 +41,8 @@ def getUrl():
             tickets[i] = "https://www.google.com/finance/quote/" + i + \
                 ":MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw"
     data.close()
+
+
 getUrl()
 # Заголовок эмуляции браузера
 headers = {
@@ -45,7 +51,16 @@ headers = {
     "Chrome/91.0.4472.135 Safari/537.36"}
 
 
+# Update global parameters
+def refrasher():
+    global hat
+    hat = str(B+"G"+R+'o'+Y+'o'+B+'g'+G+'l'+R+'e'+Y+" Finanse"+N+"\n Input settings: " +
+              "|"+B+"s"+N+"ell (price>"+str(sell_pr)+"%max)|" + " |"+G+"b"+N+"uy (price<min+"+str(buy_pr)+"%)|" + Y + " d"+N + " - set default \n" +
+              ' Tickets config: '+'|'+Y+'A'+N+' - add new ticket|'+' |'+Y+'D'+N+' - delete ticket| |select table:' + Y+' 1, 2, 3'+N+'|')
+
 # Функция обновления тикетов и построения таблици
+
+
 def update_ticker():
     global cache, table, print_st
     # Формируем таблицу
@@ -60,7 +75,6 @@ def update_ticker():
         try:
             html = requests.get(tickets[i], headers)
             soup = BeautifulSoup(html.content, 'html.parser')  # парсер HTML
-
             # Ищем div блок с содержимым значения индекса акции
             convert = soup.findAll('div', {'class': 'YMlKec fxKbKc'})
             # Ищем div блок с содержимым значения годового ренжа
@@ -72,8 +86,7 @@ def update_ticker():
 
             # Вставляем данные в массив данных для таблици
             td.append([i, price, currency, '   %   ', "--:--",
-                    RangePerYear, "    *    ", "   ~  "])
-        
+                       RangePerYear, "    *    ", "   ~  "])
         # Ошибка получения тикета удаляем его из файла data
         except:
             data = open('data.txt', 'r')
@@ -85,14 +98,13 @@ def update_ticker():
                 if _ != '' and _ != tickets[i].split('quote/')[1].split(':MCX?')[0]:
                     data.write(_+"\n")
             data.close()
-            
     # Создаем таблицу
     table = PrettyTable(th)
     x = 0
     for i in td:
         if "," in i[1]:
             i[1] = i[1].split(",")[0] + "." + i[1].split(",")[1].split(".")[0]
-        if cache != []:
+        if cache != [] and len(cache) == len(td):
             if float(i[1]) < float(cache[x][1].split("m")[0]):
                 a = float(i[1])
                 b = float(cache[x][1])
@@ -134,24 +146,27 @@ def update_ticker():
 
 # User input thread
 def UserInput():
-    global sell_pr, buy_pr, select
+    global sell_pr, buy_pr, select, hat
     while True:
         key = getkey.getkey()
         match key:
             case "s":
                 try:
                     sell_pr = int(input("Sell %:"))
+                    refrasher()
                 except:
                     print('input value 1...100')
             case 'b':
                 try:
                     buy_pr = int(input('Buy %'))
+                    refrasher()
                 except:
                     print('input value 1...100')
             case 'd':
                 print('Buy and Sell set to default')
                 sell_pr = 85
                 buy_pr = 45
+                refrasher()
             case 'A':
                 data = open('data.txt', 'a')
                 data.write("\n"+input('Input ticket:').upper())
@@ -165,7 +180,7 @@ def UserInput():
                 new_data = []
                 if ticketToDel in old_data:
                     for i in old_data:
-                        if i !='' and i != ticketToDel:
+                        if i != '' and i != ticketToDel:
                             new_data.append(i)
                     data = open('data.txt', 'w+')
                     for i in new_data:
@@ -179,25 +194,34 @@ def UserInput():
                 select = 1
             case '2':
                 select = 2
+            case '3':
+                select = 3
 
-# Print table depending on select
+
+# Selecter: Print table depending on select
 def printing():
-    global print_st, print_st2, table
+    global print_st, print_st2, table, hat
     while True:
         time.sleep(1)
         match select:
-            case 1:
+            case 1:  # Print ticket table
                 if print_st:
                     os.system("clear")
                     print(hat)
                     print(table)
                     print_st = False
-            case 2:
+            case 2:  # Print divident calendar table
                 if print_st2:
                     os.system("clear")
                     print(hat)
+                    print('This is divident calendar in future')
                     print_st2 = False
-#Threads
+            case 3:  # Print ....
+                pass
+
+
+# Threads
+# User input thread
 thread_userinput = threading.Thread(target=UserInput, args=())
 thread_userinput.start()
 # update ticket in thread
