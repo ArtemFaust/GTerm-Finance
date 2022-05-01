@@ -48,21 +48,35 @@ def update_ticker():
     getUrl()
     for i in tqdm(tickets, bar_format='{l_bar}{bar:80}'):
         # Получаем html код по ссылкам
-        html = requests.get(tickets[i], headers)
-        soup = BeautifulSoup(html.content, 'html.parser')  # парсер HTML
+        try:
+            html = requests.get(tickets[i], headers)
+            soup = BeautifulSoup(html.content, 'html.parser')  # парсер HTML
 
-        # Ищем div блок с содержимым значения индекса акции
-        convert = soup.findAll('div', {'class': 'YMlKec fxKbKc'})
-        # Ищем div блок с содержимым значения годового ренжа
-        Range_per_year = soup.findAll('div', {'class': 'P6K39c'})
+            # Ищем div блок с содержимым значения индекса акции
+            convert = soup.findAll('div', {'class': 'YMlKec fxKbKc'})
+            # Ищем div блок с содержимым значения годового ренжа
+            Range_per_year = soup.findAll('div', {'class': 'P6K39c'})
 
-        RangePerYear = Range_per_year[2].text  # Годовая разница
-        currency = convert[0].text[0]  # тип валюты
-        price = convert[0].text[1:]  # Значение индекса
+            RangePerYear = Range_per_year[2].text  # Годовая разница
+            currency = convert[0].text[0]  # тип валюты
+            price = convert[0].text[1:]  # Значение индекса
 
-        # Вставляем данные в массив данных для таблици
-        td.append([i, price, currency, '   %   ', "--:--",
-                  RangePerYear, "    *    ", "   ~  "])
+            # Вставляем данные в массив данных для таблици
+            td.append([i, price, currency, '   %   ', "--:--",
+                    RangePerYear, "    *    ", "   ~  "])
+        
+        # Ошибка получения тикета удаляем его из файла data
+        except:
+            data = open('data.txt', 'r')
+            old_data = data.read()
+            data.close()
+            old_data = old_data.split('\n')
+            data = open('data.txt', 'w+')
+            for _ in old_data:
+                if _ != '' and _ != tickets[i].split('quote/')[1].split(':MCX?')[0]:
+                    data.write(_+"\n")
+            data.close()
+            
     # Создаем таблицу
     table = PrettyTable(th)
     x = 0
