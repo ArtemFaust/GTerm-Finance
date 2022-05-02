@@ -72,77 +72,82 @@ def update_ticker():
     getUrl()
     for i in tqdm(tickets, bar_format='{l_bar}{bar:80}'):
         # Получаем html код по ссылкам
-        try:
-            html = requests.get(tickets[i], headers)
-            soup = BeautifulSoup(html.content, 'html.parser')  # парсер HTML
-            # Ищем div блок с содержимым значения индекса акции
-            convert = soup.findAll('div', {'class': 'YMlKec fxKbKc'})
-            # Ищем div блок с содержимым значения годового ренжа
-            Range_per_year = soup.findAll('div', {'class': 'P6K39c'})
+        atempt = True # Переключатель попыток
+        for _ in range(3): # 3 попытки получния данных
+            if atempt:
+                try:
+                    html = requests.get(tickets[i], headers)
+                    soup = BeautifulSoup(html.content, 'html.parser')  # парсер HTML
+                    # Ищем div блок с содержимым значения индекса акции
+                    convert = soup.findAll('div', {'class': 'YMlKec fxKbKc'})
+                    # Ищем div блок с содержимым значения годового ренжа
+                    Range_per_year = soup.findAll('div', {'class': 'P6K39c'})
 
-            RangePerYear = Range_per_year[2].text  # Годовая разница
-            dividend_yield = Range_per_year[5].text  # Дивидендная доходность
-            currency = convert[0].text[0]  # тип валюты
-            price = convert[0].text[1:]  # Значение индекса
-            
-            # Вставляем данные в массив данных для таблици
-            td.append([i, price, currency, '   %   ', "--:--",
-                       RangePerYear, "    *    ", "   ~  ", dividend_yield])
-        # Ошибка получения тикета удаляем его из файла data
-        except Exception as ex:
-            log = open('log.txt', 'a')
-            log.write(str(type(ex)) + '\n' + str(ex) + '\n\n\n')
-            log.close()
-            td.append(['-', '-', '-', '   %   ', "--:--",
-                       '-', "    *    ", "   ~  ", '-'])
+                    RangePerYear = Range_per_year[2].text  # Годовая разница
+                    dividend_yield = Range_per_year[5].text  # Дивидендная доходность
+                    currency = convert[0].text[0]  # тип валюты
+                    price = convert[0].text[1:]  # Значение индекса
+                    
+                    # Вставляем данные в массив данных для таблици
+                    td.append([i, price, currency, '   %   ', "--:--",
+                            RangePerYear, "    *    ", "   ~  ", dividend_yield])
+                    atempt = False # Если данные получины прекращаем попытки по данному тикету
+                # Ошибка получения тикета удаляем его из файла data
+                except Exception as ex:
+                    log = open('log.txt', 'a')
+                    log.write(str(type(ex)) + '\n' + str(ex) +' line 98'+ '\n\n\n')
+                    log.close()
+                    td.append(['-', '-', '-', '   %   ', "--:--",
+                            '-', "    *    ", "   ~  ", '-'])
     # Создаем таблицу
-    try:
         table = PrettyTable(th)
         x = 0
         for i in td:
-            if "," in i[1]:
-                i[1] = i[1].split(",")[0] + "." + i[1].split(",")[1].split(".")[0]
-            if cache != [] and len(cache) == len(td):
-                if float(i[1]) <= float(cache[x][1].split("m")[0]):
-                    a = float(i[1])
-                    b = float(cache[x][1])
-                    i[3] = R+"↓ "+str(100*(a-b)/a)[0:5] + "%" + N
-                    i[4] = str(datetime.datetime.now().hour) + ':' + \
-                        str(datetime.datetime.now().minute) + ':' + \
-                        str(datetime.datetime.now().second)
-                    # минимальное значение цены
-                    v = i[5].split(' ')[0].split('₽')[1]
-                    if ',' in v:
-                        v = v.split(',')[0] + '.' + v.split(',')[1].split('.')[0]
-                    if float(i[1]) < float(v) or float(i[1]) >= float(v) and float(i[1]) < float(v) + ((float(v)*buy_pr)/100):
-                        i[6] = G+"!!!Buy!!!"+N
-                        i[7] = '~ '+str(float(v) + ((float(v)*buy_pr)/100))[0:6]
-                else:
-                    a = float(i[1])
-                    b = float(cache[x][1])
-                    i[3] = G+'↑ '+str(100*(a-b)/a)[0:5] + "%" + N
-                    i[4] = str(datetime.datetime.now().hour) + ':' + \
-                        str(datetime.datetime.now().minute) + \
-                        ':' + str(datetime.datetime.now().second)
-                    # Максимальное значение цены
-                    v = i[5].split(' ')[2].split('₽')[1]
-                    if ',' in v:
-                        v = v.split(',')[0] + '.' + v.split(',')[1].split('.')[0]
-                    if float(i[1]) >= (float(v)*sell_pr)/100:
-                        i[6] = B+"!!!SELL!!!"+N
-                        i[7] = '~ '+str((float(v)*sell_pr)/100)[0:6]+i[2]
-                table.add_row(i)
-            else:
-                i[6] = '    *    '
-                table.add_row(i)
-            x += 1
-    except Exception as ex:
-        log = open('log.txt', 'a')
-        log.write(str(type(ex)) + '\n' + str(ex) + '\n\n\n')
-        log.close()
+            if i[0] != '-':
+                try:
+                    if "," in i[1]:
+                        i[1] = i[1].split(",")[0] + "." + i[1].split(",")[1].split(".")[0]
+                    if cache != [] and len(cache) == len(td):
+                        if float(i[1]) <= float(cache[x][1].split("m")[0]):
+                            a = float(i[1])
+                            b = float(cache[x][1])
+                            i[3] = R+"↓ "+str(100*(a-b)/a)[0:5] + "%" + N
+                            i[4] = str(datetime.datetime.now().hour) + ':' + \
+                                str(datetime.datetime.now().minute) + ':' + \
+                                str(datetime.datetime.now().second)
+                            # минимальное значение цены
+                            v = i[5].split(' ')[0].split('₽')[1]
+                            if ',' in v:
+                                v = v.split(',')[0] + '.' + v.split(',')[1].split('.')[0]
+                            if float(i[1]) < float(v) or float(i[1]) >= float(v) and float(i[1]) < float(v) + ((float(v)*buy_pr)/100):
+                                i[6] = G+"!!!Buy!!!"+N
+                                i[7] = '~ '+str(float(v) + ((float(v)*buy_pr)/100))[0:6]
+                        else:
+                            a = float(i[1])
+                            b = float(cache[x][1])
+                            i[3] = G+'↑ '+str(100*(a-b)/a)[0:5] + "%" + N
+                            i[4] = str(datetime.datetime.now().hour) + ':' + \
+                                str(datetime.datetime.now().minute) + \
+                                ':' + str(datetime.datetime.now().second)
+                            # Максимальное значение цены
+                            v = i[5].split(' ')[2].split('₽')[1]
+                            if ',' in v:
+                                v = v.split(',')[0] + '.' + v.split(',')[1].split('.')[0]
+                            if float(i[1]) >= (float(v)*sell_pr)/100:
+                                i[6] = B+"!!!SELL!!!"+N
+                                i[7] = '~ '+str((float(v)*sell_pr)/100)[0:6]+i[2]
+                        table.add_row(i)
+                    else:
+                        i[6] = '    *    '
+                        table.add_row(i)
+                    x += 1
+                except Exception as ex:
+                    log = open('log.txt', 'a')
+                    log.write(str(type(ex)) + '\n' + str(ex) +' line 146'+ '\n\n\n')
+                    log.close()     
     print_st = True
     cache = td
-    time.sleep(1)
+    time.sleep(1.2)
     update_ticker()
 
 
@@ -159,7 +164,7 @@ def UserInput():
                 except Exception as ex:
                     print('input value 1...100')
                     log = open('log.txt', 'a')
-                    log.write(str(type(ex)) + '\n' + str(ex) + '\n\n\n')
+                    log.write(str(type(ex)) + '\n' + str(ex) +' line 167'+ '\n\n\n')
                     log.close()
             case 'b':
                 try:
@@ -168,7 +173,7 @@ def UserInput():
                 except Exception as ex:
                     print('input value 1...100')
                     log = open('log.txt', 'a')
-                    log.write(str(type(ex)) + '\n' + str(ex) + '\n\n\n')
+                    log.write(str(type(ex)) + '\n' + str(ex) +' line 176'+ '\n\n\n')
                     log.close()
             case 'd':
                 print('Buy and Sell set to default')
@@ -210,7 +215,7 @@ def UserInput():
 def printing():
     global print_st, print_st2, table, hat
     while True:
-        time.sleep(0.5)
+        time.sleep(0.3)
         match select:
             case 1:  # Print ticket table
                 if print_st:
