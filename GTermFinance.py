@@ -9,7 +9,7 @@ import time
 import getkey
 tickets = {}  # Список ссылок тикетов акций
 cache = []  # кэш значий акций предыдучей итерации
-buy_pr = 45
+buy_pr = 25
 sell_pr = 85
 
 select = 1  # Select print table
@@ -41,9 +41,9 @@ def getUrl():
             tickets[i] = "https://www.google.com/finance/quote/" + i + \
                 ":MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw"
     data.close()
-
-
 getUrl()
+
+
 # Заголовок эмуляции браузера
 headers = {
     'user agent': "Mozilla/5.0 (Windows NT 10.0; WOW64) "
@@ -58,14 +58,14 @@ def refrasher():
               "|"+B+"s"+N+"ell (price>"+str(sell_pr)+"%max)|" + " |"+G+"b"+N+"uy (price<min+"+str(buy_pr)+"%)|" + Y + " d"+N + " - set default \n" +
               ' Tickets config: '+'|'+Y+'A'+N+' - add new ticket|'+' |'+Y+'D'+N+' - delete ticket| |select table:' + Y+' 1, 2, 3'+N+'|')
 
+
 # Функция обновления тикетов и построения таблици
-
-
 def update_ticker():
-    global cache, table, print_st
+    global cache, table, print_st, print_st
+    print_st = False
     # Формируем таблицу
     th = ["Name", "Price", "¤", "%",
-          "UpdateTime", 'RangePerYear', 'Action', "   ~  "]
+          "UpdateTime", 'RangePerYear', 'Action', "   ~  ", "DY"]
     table = PrettyTable(th)
     td = []
     # Получаем данные по ссылкам
@@ -81,66 +81,68 @@ def update_ticker():
             Range_per_year = soup.findAll('div', {'class': 'P6K39c'})
 
             RangePerYear = Range_per_year[2].text  # Годовая разница
+            dividend_yield = Range_per_year[5].text  # Дивидендная доходность
             currency = convert[0].text[0]  # тип валюты
             price = convert[0].text[1:]  # Значение индекса
-
+            
             # Вставляем данные в массив данных для таблици
             td.append([i, price, currency, '   %   ', "--:--",
-                       RangePerYear, "    *    ", "   ~  "])
+                       RangePerYear, "    *    ", "   ~  ", dividend_yield])
         # Ошибка получения тикета удаляем его из файла data
-        except:
-            data = open('data.txt', 'r')
-            old_data = data.read()
-            data.close()
-            old_data = old_data.split('\n')
-            data = open('data.txt', 'w+')
-            for _ in old_data:
-                if _ != '' and _ != tickets[i].split('quote/')[1].split(':MCX?')[0]:
-                    data.write(_+"\n")
-            data.close()
+        except Exception as ex:
+            log = open('log.txt', 'a')
+            log.write(str(type(ex)) + '\n' + str(ex) + '\n\n\n')
+            log.close()
+            td.append(['-', '-', '-', '   %   ', "--:--",
+                       '-', "    *    ", "   ~  ", '-'])
     # Создаем таблицу
-    table = PrettyTable(th)
-    x = 0
-    for i in td:
-        if "," in i[1]:
-            i[1] = i[1].split(",")[0] + "." + i[1].split(",")[1].split(".")[0]
-        if cache != [] and len(cache) == len(td):
-            if float(i[1]) < float(cache[x][1].split("m")[0]):
-                a = float(i[1])
-                b = float(cache[x][1])
-                i[3] = R+"↓ "+str(100*(a-b)/a)[0:5] + "%" + N
-                i[4] = str(datetime.datetime.now().hour) + ':' + \
-                    str(datetime.datetime.now().minute) + ':' + \
-                    str(datetime.datetime.now().second)
-                # минимальное значение цены
-                v = i[5].split(' ')[0].split('₽')[1]
-                if ',' in v:
-                    v = v.split(',')[0] + '.' + v.split(',')[1].split('.')[0]
-                if float(i[1]) < float(v) or float(i[1]) >= float(v) and float(i[1]) < float(v) + ((float(v)*buy_pr)/100):
-                    i[6] = G+"!!!Buy!!!"
+    try:
+        table = PrettyTable(th)
+        x = 0
+        for i in td:
+            if "," in i[1]:
+                i[1] = i[1].split(",")[0] + "." + i[1].split(",")[1].split(".")[0]
+            if cache != [] and len(cache) == len(td):
+                if float(i[1]) <= float(cache[x][1].split("m")[0]):
+                    a = float(i[1])
+                    b = float(cache[x][1])
+                    i[3] = R+"↓ "+str(100*(a-b)/a)[0:5] + "%" + N
+                    i[4] = str(datetime.datetime.now().hour) + ':' + \
+                        str(datetime.datetime.now().minute) + ':' + \
+                        str(datetime.datetime.now().second)
+                    # минимальное значение цены
+                    v = i[5].split(' ')[0].split('₽')[1]
+                    if ',' in v:
+                        v = v.split(',')[0] + '.' + v.split(',')[1].split('.')[0]
+                    if float(i[1]) < float(v) or float(i[1]) >= float(v) and float(i[1]) < float(v) + ((float(v)*buy_pr)/100):
+                        i[6] = G+"!!!Buy!!!"+N
+                        i[7] = '~ '+str(float(v) + ((float(v)*buy_pr)/100))[0:6]
+                else:
+                    a = float(i[1])
+                    b = float(cache[x][1])
+                    i[3] = G+'↑ '+str(100*(a-b)/a)[0:5] + "%" + N
+                    i[4] = str(datetime.datetime.now().hour) + ':' + \
+                        str(datetime.datetime.now().minute) + \
+                        ':' + str(datetime.datetime.now().second)
+                    # Максимальное значение цены
+                    v = i[5].split(' ')[2].split('₽')[1]
+                    if ',' in v:
+                        v = v.split(',')[0] + '.' + v.split(',')[1].split('.')[0]
+                    if float(i[1]) >= (float(v)*sell_pr)/100:
+                        i[6] = B+"!!!SELL!!!"+N
+                        i[7] = '~ '+str((float(v)*sell_pr)/100)[0:6]+i[2]
+                table.add_row(i)
             else:
-                a = float(i[1])
-                b = float(cache[x][1])
-                i[3] = G+'↑ '+str(100*(a-b)/a)[0:5] + "%" + N
-                i[4] = str(datetime.datetime.now().hour) + ':' + \
-                    str(datetime.datetime.now().minute) + \
-                    ':' + str(datetime.datetime.now().second)
-                # Максимальное значение цены
-                v = i[5].split(' ')[2].split('₽')[1]
-                if ',' in v:
-                    v = v.split(',')[0] + '.' + v.split(',')[1].split('.')[0]
-                if float(i[1]) >= (float(v)*sell_pr)/100:
-                    i[6] = B+"!!!SELL!!!"+N
-                    i[7] = '~ '+str((float(v)*sell_pr)/100)[0:6]+i[2]
-
-            table.add_row(i)
-        else:
-            i[6] = '    *    '
-            table.add_row(i)
-        x += 1
+                i[6] = '    *    '
+                table.add_row(i)
+            x += 1
+    except Exception as ex:
+        log = open('log.txt', 'a')
+        log.write(str(type(ex)) + '\n' + str(ex) + '\n\n\n')
+        log.close()
     print_st = True
     cache = td
-    time.sleep(2)
+    time.sleep(1)
     update_ticker()
 
 
@@ -154,14 +156,20 @@ def UserInput():
                 try:
                     sell_pr = int(input("Sell %:"))
                     refrasher()
-                except:
+                except Exception as ex:
                     print('input value 1...100')
+                    log = open('log.txt', 'a')
+                    log.write(str(type(ex)) + '\n' + str(ex) + '\n\n\n')
+                    log.close()
             case 'b':
                 try:
                     buy_pr = int(input('Buy %'))
                     refrasher()
-                except:
+                except Exception as ex:
                     print('input value 1...100')
+                    log = open('log.txt', 'a')
+                    log.write(str(type(ex)) + '\n' + str(ex) + '\n\n\n')
+                    log.close()
             case 'd':
                 print('Buy and Sell set to default')
                 sell_pr = 85
@@ -202,14 +210,13 @@ def UserInput():
 def printing():
     global print_st, print_st2, table, hat
     while True:
-        time.sleep(1)
+        time.sleep(0.5)
         match select:
             case 1:  # Print ticket table
                 if print_st:
                     os.system("clear")
                     print(hat)
                     print(table)
-                    print_st = False
             case 2:  # Print divident calendar table
                 if print_st2:
                     os.system("clear")
