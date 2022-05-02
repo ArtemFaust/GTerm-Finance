@@ -215,13 +215,14 @@ def UserInput():
 def printing():
     global print_st, print_st2, table, hat
     while True:
-        time.sleep(0.3)
+        time.sleep(0.5)
         match select:
             case 1:  # Print ticket table
                 if print_st:
                     os.system("clear")
                     print(hat)
                     print(table)
+                    print_st = False
             case 2:  # Print divident calendar table
                 if print_st2:
                     os.system("clear")
