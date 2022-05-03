@@ -3,3 +3,4 @@ bs4
 prettytable
 tqdm
 getkey
+asciichartpy
