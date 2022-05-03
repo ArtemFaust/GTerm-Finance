@@ -1,0 +1,44 @@
+<class 'TypeError'>
+'NoneType' object is not subscriptable line 315
+
+
+<class 'TypeError'>
+'NoneType' object is not subscriptable line 315
+
+
+<class 'requests.exceptions.ConnectTimeout'>
+HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/GMKN:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x106cbce20>, 'Connection to www.google.com timed out. (connect timeout=None)')) line 109
+
+
+<class 'TypeError'>
+'NoneType' object is not subscriptable line 315
+
+
+<class 'TypeError'>
+'NoneType' object is not subscriptable line 315
+
+
+<class 'TypeError'>
+'NoneType' object is not subscriptable line 315
+
+
+<class 'TypeError'>
+'NoneType' object is not subscriptable line 315
+
+
+<class 'TypeError'>
+'NoneType' object is not subscriptable line 315
+
+
+<class 'TypeError'>
+'NoneType' object is not subscriptable line 315
+
+
+<class 'TypeError'>
+'NoneType' object is not subscriptable line 315
+
+
+<class 'requests.exceptions.ConnectTimeout'>
+HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/SNGS:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x109c6a8f0>, 'Connection to www.google.com timed out. (connect timeout=None)')) line 109
+
+

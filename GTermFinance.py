@@ -318,8 +318,14 @@ def printing():
                             fig_to_show = list(figs.keys())[0]
                         fig = figs[fig_to_show]
                         print('Ticket: ' + Y+fig_to_show+N+' lenght: '+ str(len(fig[0])))
+                        all = fig[0]
+                        all.reverse()
+                        top = fig[1]
+                        top.reverse()
+                        minn = fig[2]
+                        minn.reverse()
                         print(asciichartpy.plot(
-                            series=[fig[0], fig[1], fig[2]], cfg=config))
+                            series=[all[:os.get_terminal_size().columns-10], top[:os.get_terminal_size().columns-10], minn[:os.get_terminal_size().columns-10]], cfg=config))
                     except Exception as ex:
                         log = open('log.txt', 'a')
                         log.write(str(type(ex)) + '\n' + str(ex) +' line 315'+ '\n\n\n')
