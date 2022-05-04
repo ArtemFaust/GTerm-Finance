@@ -4,3 +4,4 @@ prettytable
 tqdm
 getkey
 asciichartpy
+plotext

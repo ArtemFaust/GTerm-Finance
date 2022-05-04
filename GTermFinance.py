@@ -8,7 +8,6 @@ import threading
 import time
 import getkey
 import sqlite3
-import asciichartpy
 tickets = {}  # Список ссылок тикетов акций
 cache = []  # кэш значий акций предыдучей итерации
 buy_pr = 25
@@ -136,12 +135,10 @@ def update_ticker():
                     log = open('log.txt', 'a')
                     log.write(str(type(ex)) + '\n' + str(ex) +' line 109'+ '\n\n\n')
                     log.close()
-                    td.append(['-', '-', '-', '   %   ', "--:--",
-                            '-', "    *    ", "   ~  ", '-', '-'])
+
     # Создаем таблицу
         table = PrettyTable(th)
         x = 0
-        cache = td
         for i in td:
             if cache != [] and i[1] != '-' and cache[x][1].split("m")[0] != '-':
                 try:
@@ -179,8 +176,6 @@ def update_ticker():
                                 i[6] = B+"!!!SELL!!!"+N
                                 i[7] = '~ '+str((float(v)*sell_pr)/100)[0:6]+i[2]
 
-                        # Определяем тренд
-                        # медвежий низходячий бычий восходячий тренд в зависимости от периода
                         # Получаем данные из ДБ
                         if trend_period == '1d':  # переиод 1 день
                             sql = """select * from ticket_data where TicketName = '{0}' and Year = '{1}' and Month = '{2}' and Day = '{3}';""".format(
@@ -189,24 +184,9 @@ def update_ticker():
                             all_day_value_list = []
                             for _ in rows:
                                 all_day_value_list.append(list(_)[7])
-
-                            top_list = [] # Максимумы дня
-                            min_list = [] # Минимумы дня
-                            top_list.append(all_day_value_list[0])
-                            min_list.append(all_day_value_list[0])
-                            k = 0
-                            for _ in all_day_value_list[1:]:
-                                if float(_) > float(top_list[0]) and float(_) > float(top_list[k]):
-                                    top_list.append(_)
-                                    k += 1
-                                elif float(_) < float(min_list[0]) and float(_) < float(min_list[k]):
-                                    min_list.append(_)     
-                                    k += 1
-                            top_list = top_list[1:] # Максимальные значения
-                            min_list = min_list[1:] # Минимальные значения
                             
-                            # Формируем графики
-                            figs[i[0]] = [all_day_value_list, top_list, min_list]
+                            # Данные для графика
+                            figs[i[0]] = [all_day_value_list]
 
                         table.add_row(i)
                     else:
@@ -216,7 +196,7 @@ def update_ticker():
                 except Exception as ex:
                     log = open('log.txt', 'a')
                     log.write(str(type(ex)) + '\n' + str(ex) +' line 204'+ '\n\n\n')
-                    log.close()    
+                    log.close()   
     print_st = True
     cache = td
     time.sleep(1.2)
@@ -300,32 +280,34 @@ def printing():
                 if print_st2:
                     os.system("clear")
                     print(hat)
-                    print('This is divident calendar in future')
-                    print_st2 = False
+                    #html = requests.get('https://open-broker.ru/analytics/dividend-calendar/', headers)
+                    #soup = BeautifulSoup(html.content, 'html.parser')  # парсер HTML
+                    # Ищем table блок с содержимым
+                    #convert = soup.findAll('table', {
+                    #                       'class': 'DividendCalendarTable_table__qX1ZS Table_table__fI87O Table_table--l__1LdnF'})
+                    #print(convert)
+
             case 3:  # Print fig
                 if print_st:
                     os.system("clear")
                     print(hat)
                     try:
-                        config = {
-                            'colors': [
-                                asciichartpy.green,
-                                asciichartpy.magenta,
-                                asciichartpy.red
-                            ]
-                        }
                         if fig_to_show == None:
                             fig_to_show = list(figs.keys())[0]
                         fig = figs[fig_to_show]
-                        print('Ticket: ' + Y+fig_to_show+N+' lenght: '+ str(len(fig[0])))
+                        print('Ticket: ' + Y+fig_to_show+N+' lenght: '+ str(len(fig[0])) + ' price: ' + str(fig[0][-1]))
+                        import plotext as plt
                         all = fig[0]
-                        all.reverse()
-                        top = fig[1]
-                        top.reverse()
-                        minn = fig[2]
-                        minn.reverse()
-                        print(asciichartpy.plot(
-                            series=[all[:os.get_terminal_size().columns-10], top[:os.get_terminal_size().columns-10], minn[:os.get_terminal_size().columns-10]], cfg=config))
+                        #all.reverse()
+
+                        plt.plot_size(width=os.get_terminal_size().columns, height=os.get_terminal_size(
+                        ).lines - 6)
+                        plt.plot(all)
+                        plt.theme('clear')
+                        plt.show()
+                        plt.cld()
+                        plt.clc()
+                        plt.clf()                       
                     except Exception as ex:
                         log = open('log.txt', 'a')
                         log.write(str(type(ex)) + '\n' + str(ex) +' line 315'+ '\n\n\n')
