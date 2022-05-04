@@ -8,6 +8,9 @@ import threading
 import time
 import getkey
 import sqlite3
+import time
+
+tz = time.tzname[0]
 tickets = {}  # Список ссылок тикетов акций
 cache = []  # кэш значий акций предыдучей итерации
 buy_pr = 25
@@ -109,27 +112,29 @@ def update_ticker():
                                RangePerYear, "    *    ", "   ~  ", dividend_yield, '📈🐄 or 🐻📉'])
                     atempt = False # Если данные получины прекращаем попытки по данному тикету
                     # Встанвка данных в БД
-                    try:
-                        if "," in price:
-                            price = price.split(",")[0] + "." + \
-                                price.split(",")[1].split(".")[0]
-                        # Вставка данных по тикету в БД
-                        sqlite_connection = sqlite3.connect('ticket.db')
-                        cursor = sqlite_connection.cursor()
-                        sql = """INSERT INTO ticket_data (TicketName, Year, Month, Day, Hour, Minute, Second, IndexValue) VALUES ({0}, {1}, {2}, {3}, {4}, {5}, {6}, {7});""".format(
-                            "'"+str(i)+"'", "'"+str(datetime.datetime.now().year)+"'", "'"+str(
-                                            datetime.datetime.now().month)+"'", "'"+str(datetime.datetime.now().day)+"'",
-                            "'"+str(datetime.datetime.now().hour)+"'", "'"+str(datetime.datetime.now().minute)+"'", "'"+str(datetime.datetime.now().second)+"'", float(price))
-                        cursor.execute(sql)
-                        sqlite_connection.commit()
-                        cursor.close()
-                        sqlite_connection.close()
-                        sqlite_connection = None
-                    except Exception as ex:
-                        log = open('log.txt', 'a')
-                        log.write(str(type(ex)) + '\n' +
-                                  str(ex) + ' line 131' + '\n\n\n')
-                        log.close()
+                    if tz == '+3':
+                        if datetime.datetime.now().hour < 19:
+                            try:
+                                if "," in price:
+                                    price = price.split(",")[0] + "." + \
+                                        price.split(",")[1].split(".")[0]
+                                # Вставка данных по тикету в БД
+                                sqlite_connection = sqlite3.connect('ticket.db')
+                                cursor = sqlite_connection.cursor()
+                                sql = """INSERT INTO ticket_data (TicketName, Year, Month, Day, Hour, Minute, Second, IndexValue) VALUES ({0}, {1}, {2}, {3}, {4}, {5}, {6}, {7});""".format(
+                                    "'"+str(i)+"'", "'"+str(datetime.datetime.now().year)+"'", "'"+str(
+                                                    datetime.datetime.now().month)+"'", "'"+str(datetime.datetime.now().day)+"'",
+                                    "'"+str(datetime.datetime.now().hour)+"'", "'"+str(datetime.datetime.now().minute)+"'", "'"+str(datetime.datetime.now().second)+"'", float(price))
+                                cursor.execute(sql)
+                                sqlite_connection.commit()
+                                cursor.close()
+                                sqlite_connection.close()
+                                sqlite_connection = None
+                            except Exception as ex:
+                                log = open('log.txt', 'a')
+                                log.write(str(type(ex)) + '\n' +
+                                        str(ex) + ' line 131' + '\n\n\n')
+                                log.close()
                 # Ошибка получения тикета удаляем его из файла data
                 except Exception as ex:
                     log = open('log.txt', 'a')
