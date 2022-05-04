@@ -21,7 +21,7 @@ table = None
 print_st = False
 print_st2 = True
 figs = {}
-trend_period = '1d'
+graph_period = '1m'
 fig_to_show = None
 
 # Color
@@ -34,8 +34,8 @@ Y = '\033[0;33m'  # Yellow
 # Hat
 hat = str(B+"G"+R+'o'+Y+'o'+B+'g'+G+'l'+R+'e'+Y+" Finanse"+N+"\n Input settings: " +
           "|"+B+"s"+N+"ell (price>"+str(sell_pr)+"%max)|" + " |"+G+"b"+N+"uy (price<min+"+str(buy_pr)+"%)|" + Y + " d"+N + " - set default \n" +
-          ' Tickets config: '+'|'+Y+'A'+N+' - add new ticket|'+' |'+Y+'D'+N+' - delete ticket| |select view:' + Y+' 1, 2, 3'+N+'|'+Y+' T'+N+' - Trend period: %s ' % trend_period + '(1d, 5d, 1m)\n' +
-            Y+' G'+N+' - set ticket to graph')
+          ' Tickets config: '+'|'+Y+'A'+N+' - add new ticket|'+' |'+Y+'D'+N+' - delete ticket| |select view:' + Y+' 1, 2, 3'+N+'|'+Y+' G'+N+' - Graph period: %s ' % graph_period + '(1d, 3d, 1m)\n' +
+            Y+' T'+N+' - set ticket to graph')
 print(hat)
 # Считываем индексы из файла и формируем список ссылок
 
@@ -80,8 +80,8 @@ def refrasher():
     global hat
     hat = str(B+"G"+R+'o'+Y+'o'+B+'g'+G+'l'+R+'e'+Y+" Finanse"+N+"\n Input settings: " +
               "|"+B+"s"+N+"ell (price>"+str(sell_pr)+"%max)|" + " |"+G+"b"+N+"uy (price<min+"+str(buy_pr)+"%)|" + Y + " d"+N + " - set default \n" +
-              ' Tickets config: '+'|'+Y+'A'+N+' - add new ticket|'+' |'+Y+'D'+N+' - delete ticket| |select view:' + Y+' 1, 2, 3'+N+'|'+Y+' T'+N+' - Trend period: %s ' % trend_period + '(1d, 5d, 1m)\n' +
-              Y+' G'+N+' - set ticket to graph')
+              ' Tickets config: '+'|'+Y+'A'+N+' - add new ticket|'+' |'+Y+'D'+N+' - delete ticket| |select view:' + Y+' 1, 2, 3'+N+'|'+Y+' G'+N+' - Graph period: %s ' % graph_period + '(1d, 3d, 1m)\n' +
+              Y+' T'+N+' - set ticket to graph')
 
 
 # Функция обновления тикетов и построения таблици
@@ -197,16 +197,23 @@ def update_ticker():
                                     str((float(v)*sell_pr)/100)[0:6]+i[2]
 
                         # Получаем данные из ДБ
-                        if trend_period == '1d':  # переиод 1 день
+                        if graph_period == '1d':  # переиод 1 день
                             sql = """select * from ticket_data where TicketName = '{0}' and Year = '{1}' and Month = '{2}' and Day = '{3}';""".format(
                                 str(i[0]), str(datetime.datetime.now().year), str(datetime.datetime.now().month), str(datetime.datetime.now().day))
-                            rows = sql_execute(sql)
-                            all_day_value_list = []
-                            for _ in rows:
-                                all_day_value_list.append(list(_)[7])
+                        elif graph_period == '3d':
+                            sql = """select * from ticket_data where TicketName = '{0}' and Year = '{1}' and Month = '{2}' and Day = '{3}' and Day = '{4}' and Day = '{5}';""".format(
+                                str(i[0]), str(datetime.datetime.now().year), str(datetime.datetime.now().month), str(datetime.datetime.now().day-2), 
+                                str(datetime.datetime.now().day-1), str(datetime.datetime.now().day))
+                        elif graph_period == '1m':
+                            sql = """select * from ticket_data where TicketName = '{0}' and Year = '{1}' and Month = '{2}';""".format(
+                                str(i[0]), str(datetime.datetime.now().year), str(datetime.datetime.now().month))
+                        rows = sql_execute(sql)
+                        all_day_value_list = []
+                        for _ in rows:
+                            all_day_value_list.append(list(_)[7])
 
-                            # Данные для графика
-                            figs[i[0]] = [all_day_value_list]
+                        # Данные для графика
+                        figs[i[0]] = [all_day_value_list]
 
                         table.add_row(i)
                     else:
@@ -226,7 +233,7 @@ def update_ticker():
 
 # User input thread
 def UserInput():
-    global sell_pr, buy_pr, select, hat, fig_to_show
+    global sell_pr, buy_pr, select, hat, fig_to_show, graph_period
     while True:
         key = getkey.getkey()
         match key:
@@ -284,12 +291,14 @@ def UserInput():
                 select = 2
             case '3':
                 select = 3
-            case 'G':
+            case 'T':
                 fig_to_show = input('Ticket?:').upper()
+            case 'G':
+                graph_period = input('Period?:')
+                refrasher()
+
 
 # Selecter: Print table depending on select
-
-
 def printing():
     global print_st, print_st2, table, hat, figs, fig_to_show
     while True:
@@ -301,6 +310,7 @@ def printing():
                     print(hat)
                     print(table)
                     print_st = False
+            
             case 2:  # Print divident calendar table
                 if print_st2:
                     os.system("clear")
