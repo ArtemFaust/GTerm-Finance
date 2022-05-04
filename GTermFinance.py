@@ -34,7 +34,7 @@ Y = '\033[0;33m'  # Yellow
 # Hat
 hat = str(B+"G"+R+'o'+Y+'o'+B+'g'+G+'l'+R+'e'+Y+" Finanse"+N+"\n Input settings: " +
           "|"+B+"s"+N+"ell (price>"+str(sell_pr)+"%max)|" + " |"+G+"b"+N+"uy (price<min+"+str(buy_pr)+"%)|" + Y + " d"+N + " - set default \n" +
-          ' Tickets config: '+'|'+Y+'A'+N+' - add new ticket|'+' |'+Y+'D'+N+' - delete ticket| |select view:' + Y+' 1, 2, 3'+N+'|'+Y+' T'+N+' - Trend period: %s ' % trend_period + '(1d, 5d, 1m)\n'+
+          ' Tickets config: '+'|'+Y+'A'+N+' - add new ticket|'+' |'+Y+'D'+N+' - delete ticket| |select view:' + Y+' 1, 2, 3'+N+'|'+Y+' T'+N+' - Trend period: %s ' % trend_period + '(1d, 5d, 1m)\n' +
             Y+' G'+N+' - set ticket to graph')
 print(hat)
 # Считываем индексы из файла и формируем список ссылок
@@ -49,9 +49,13 @@ def getUrl():
             tickets[i] = "https://www.google.com/finance/quote/" + i + \
                 ":MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw"
     data.close()
+
+
 getUrl()
 
 # функция Выполнение sql запроса для получения полей тикетов
+
+
 def sql_execute(sql):
     sqlite_connection = sqlite3.connect('ticket.db')
     cursor = sqlite_connection.cursor()
@@ -62,6 +66,7 @@ def sql_execute(sql):
     sqlite_connection.close()
     sqlite_connection = None
     return rows
+
 
 # Заголовок эмуляции браузера
 headers = {
@@ -92,34 +97,37 @@ def update_ticker():
     getUrl()
     for i in tqdm(tickets, bar_format='{l_bar}{bar:100}'):
         # Получаем html код по ссылкам
-        atempt = True # Переключатель попыток
-        for _ in range(3): # 3 попытки получния данных
+        atempt = True  # Переключатель попыток
+        for _ in range(3):  # 3 попытки получния данных
             if atempt:
                 try:
                     html = requests.get(tickets[i], headers)
-                    soup = BeautifulSoup(html.content, 'html.parser')  # парсер HTML
+                    soup = BeautifulSoup(
+                        html.content, 'html.parser')  # парсер HTML
                     # Ищем div блок с содержимым значения индекса акции
                     convert = soup.findAll('div', {'class': 'YMlKec fxKbKc'})
                     # Ищем div блок с содержимым значения годового ренжа
                     Range_per_year = soup.findAll('div', {'class': 'P6K39c'})
 
                     RangePerYear = Range_per_year[2].text  # Годовая разница
-                    dividend_yield = Range_per_year[5].text  # Дивидендная доходность
+                    # Дивидендная доходность
+                    dividend_yield = Range_per_year[5].text
                     currency = convert[0].text[0]  # тип валюты
                     price = convert[0].text[1:]  # Значение индекса
                     # Вставляем данные в массив данных для таблици
                     td.append([i, price, currency, '   %   ', "--:--",
                                RangePerYear, "    *    ", "   ~  ", dividend_yield, '📈🐄 or 🐻📉'])
-                    atempt = False # Если данные получины прекращаем попытки по данному тикету
+                    atempt = False  # Если данные получины прекращаем попытки по данному тикету
                     # Встанвка данных в БД
                     if tz == '+3':
-                        if datetime.datetime.now().hour < 19:
+                        if datetime.datetime.now().hour < 19 and float(str(datetime.datetime.now().hour) + '.' + str(datetime.datetime.now().minute)) > 9.30:
                             try:
                                 if "," in price:
                                     price = price.split(",")[0] + "." + \
                                         price.split(",")[1].split(".")[0]
                                 # Вставка данных по тикету в БД
-                                sqlite_connection = sqlite3.connect('ticket.db')
+                                sqlite_connection = sqlite3.connect(
+                                    'ticket.db')
                                 cursor = sqlite_connection.cursor()
                                 sql = """INSERT INTO ticket_data (TicketName, Year, Month, Day, Hour, Minute, Second, IndexValue) VALUES ({0}, {1}, {2}, {3}, {4}, {5}, {6}, {7});""".format(
                                     "'"+str(i)+"'", "'"+str(datetime.datetime.now().year)+"'", "'"+str(
@@ -133,12 +141,13 @@ def update_ticker():
                             except Exception as ex:
                                 log = open('log.txt', 'a')
                                 log.write(str(type(ex)) + '\n' +
-                                        str(ex) + ' line 131' + '\n\n\n')
+                                          str(ex) + ' line 131' + '\n\n\n')
                                 log.close()
                 # Ошибка получения тикета удаляем его из файла data
                 except Exception as ex:
                     log = open('log.txt', 'a')
-                    log.write(str(type(ex)) + '\n' + str(ex) +' line 109'+ '\n\n\n')
+                    log.write(str(type(ex)) + '\n' +
+                              str(ex) + ' line 109' + '\n\n\n')
                     log.close()
 
     # Создаем таблицу
@@ -148,7 +157,8 @@ def update_ticker():
             if cache != [] and i[1] != '-' and cache[x][1].split("m")[0] != '-':
                 try:
                     if "," in i[1]:
-                        i[1] = i[1].split(",")[0] + "." + i[1].split(",")[1].split(".")[0]
+                        i[1] = i[1].split(",")[0] + "." + \
+                            i[1].split(",")[1].split(".")[0]
                     if cache != [] and len(cache) == len(td):
                         if float(i[1]) <= float(cache[x][1].split("m")[0]):
                             a = float(i[1])
@@ -160,11 +170,14 @@ def update_ticker():
                             # минимальное значение цены
                             v = i[5].split(' ')[0].split('₽')[1]
                             if ',' in v:
-                                v = v.split(',')[0] + '.' + v.split(',')[1].split('.')[0]
+                                v = v.split(',')[0] + '.' + \
+                                    v.split(',')[1].split('.')[0]
                             # Безусловный процент покупки
                             if float(i[1]) < float(v) or float(i[1]) >= float(v) and float(i[1]) < float(v) + ((float(v)*buy_pr)/100):
                                 i[6] = G+"!!!Buy!!!"+N
-                                i[7] = '~ '+str(float(v) + ((float(v)*buy_pr)/100))[0:6]
+                                i[7] = '~ ' + \
+                                    str(float(v) +
+                                        ((float(v)*buy_pr)/100))[0:6]
                         else:
                             a = float(i[1])
                             b = float(cache[x][1])
@@ -175,11 +188,13 @@ def update_ticker():
                             # Максимальное значение цены
                             v = i[5].split(' ')[2].split('₽')[1]
                             if ',' in v:
-                                v = v.split(',')[0] + '.' + v.split(',')[1].split('.')[0]
+                                v = v.split(',')[0] + '.' + \
+                                    v.split(',')[1].split('.')[0]
                             # Безусловный процент продажи
                             if float(i[1]) >= (float(v)*sell_pr)/100:
                                 i[6] = B+"!!!SELL!!!"+N
-                                i[7] = '~ '+str((float(v)*sell_pr)/100)[0:6]+i[2]
+                                i[7] = '~ ' + \
+                                    str((float(v)*sell_pr)/100)[0:6]+i[2]
 
                         # Получаем данные из ДБ
                         if trend_period == '1d':  # переиод 1 день
@@ -189,7 +204,7 @@ def update_ticker():
                             all_day_value_list = []
                             for _ in rows:
                                 all_day_value_list.append(list(_)[7])
-                            
+
                             # Данные для графика
                             figs[i[0]] = [all_day_value_list]
 
@@ -200,8 +215,9 @@ def update_ticker():
                     x += 1
                 except Exception as ex:
                     log = open('log.txt', 'a')
-                    log.write(str(type(ex)) + '\n' + str(ex) +' line 204'+ '\n\n\n')
-                    log.close()   
+                    log.write(str(type(ex)) + '\n' +
+                              str(ex) + ' line 204' + '\n\n\n')
+                    log.close()
     print_st = True
     cache = td
     time.sleep(1.2)
@@ -221,7 +237,8 @@ def UserInput():
                 except Exception as ex:
                     print('input value 1...100')
                     log = open('log.txt', 'a')
-                    log.write(str(type(ex)) + '\n' + str(ex) +' line 167'+ '\n\n\n')
+                    log.write(str(type(ex)) + '\n' +
+                              str(ex) + ' line 167' + '\n\n\n')
                     log.close()
             case 'b':
                 try:
@@ -230,7 +247,8 @@ def UserInput():
                 except Exception as ex:
                     print('input value 1...100')
                     log = open('log.txt', 'a')
-                    log.write(str(type(ex)) + '\n' + str(ex) +' line 176'+ '\n\n\n')
+                    log.write(str(type(ex)) + '\n' +
+                              str(ex) + ' line 176' + '\n\n\n')
                     log.close()
             case 'd':
                 print('Buy and Sell set to default')
@@ -270,6 +288,8 @@ def UserInput():
                 fig_to_show = input('Ticket?:').upper()
 
 # Selecter: Print table depending on select
+
+
 def printing():
     global print_st, print_st2, table, hat, figs, fig_to_show
     while True:
@@ -286,11 +306,11 @@ def printing():
                     os.system("clear")
                     print(hat)
                     #html = requests.get('https://open-broker.ru/analytics/dividend-calendar/', headers)
-                    #soup = BeautifulSoup(html.content, 'html.parser')  # парсер HTML
+                    # soup = BeautifulSoup(html.content, 'html.parser')  # парсер HTML
                     # Ищем table блок с содержимым
-                    #convert = soup.findAll('table', {
+                    # convert = soup.findAll('table', {
                     #                       'class': 'DividendCalendarTable_table__qX1ZS Table_table__fI87O Table_table--l__1LdnF'})
-                    #print(convert)
+                    # print(convert)
 
             case 3:  # Print fig
                 if print_st:
@@ -300,10 +320,11 @@ def printing():
                         if fig_to_show == None:
                             fig_to_show = list(figs.keys())[0]
                         fig = figs[fig_to_show]
-                        print('Ticket: ' + Y+fig_to_show+N+' lenght: '+ str(len(fig[0])) + ' price: ' + str(fig[0][-1]))
+                        print('Ticket: ' + Y+fig_to_show+N+' lenght: ' +
+                              str(len(fig[0])) + ' price: ' + str(fig[0][-1]))
                         import plotext as plt
                         all = fig[0]
-                        #all.reverse()
+                        # all.reverse()
 
                         plt.plot_size(width=os.get_terminal_size().columns, height=os.get_terminal_size(
                         ).lines - 6)
@@ -312,12 +333,14 @@ def printing():
                         plt.show()
                         plt.cld()
                         plt.clc()
-                        plt.clf()                       
+                        plt.clf()
                     except Exception as ex:
                         log = open('log.txt', 'a')
-                        log.write(str(type(ex)) + '\n' + str(ex) +' line 315'+ '\n\n\n')
-                        log.close() 
+                        log.write(str(type(ex)) + '\n' +
+                                  str(ex) + ' line 315' + '\n\n\n')
+                        log.close()
                     print_st = False
+
 
 # Threads
 # User input thread
