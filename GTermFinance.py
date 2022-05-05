@@ -35,7 +35,7 @@ Y = '\033[0;33m'  # Yellow
 hat = str(B+"G"+R+'o'+Y+'o'+B+'g'+G+'l'+R+'e'+Y+" Finanse"+N+"\n Input settings: " +
           "|"+B+"s"+N+"ell (price>"+str(sell_pr)+"%max)|" + " |"+G+"b"+N+"uy (price<min+"+str(buy_pr)+"%)|" + Y + " d"+N + " - set default \n" +
           ' Tickets config: '+'|'+Y+'A'+N+' - add new ticket|'+' |'+Y+'D'+N+' - delete ticket| |select view:' + Y+' 1, 2, 3'+N+'|'+Y+' G'+N+' - Graph period: %s ' % graph_period + '(1d, 3d, 1m)\n' +
-            Y+' T'+N+' - set ticket to graph')
+            Y+' T'+N+' - set ticket to graph' + Y+' U'+N+' - update dividend calendar')
 print(hat)
 
 
@@ -79,7 +79,7 @@ def refrasher():
     hat = str(B+"G"+R+'o'+Y+'o'+B+'g'+G+'l'+R+'e'+Y+" Finanse"+N+"\n Input settings: " +
               "|"+B+"s"+N+"ell (price>"+str(sell_pr)+"%max)|" + " |"+G+"b"+N+"uy (price<min+"+str(buy_pr)+"%)|" + Y + " d"+N + " - set default \n" +
               ' Tickets config: '+'|'+Y+'A'+N+' - add new ticket|'+' |'+Y+'D'+N+' - delete ticket| |select view:' + Y+' 1, 2, 3'+N+'|'+Y+' G'+N+' - Graph period: %s ' % graph_period + '(1d, 3d, 1m)\n' +
-              Y+' T'+N+' - set ticket to graph')
+              Y+' T'+N+' - set ticket to graph' + Y+' U'+N+' - update dividend calendar')
 
 
 # Функция обновления тикетов и построения таблици
@@ -232,7 +232,36 @@ def update_ticker():
     update_ticker()
 
 
+def update_divident_calendar():
+    sql = """delete from dividend_calendar;"""
+    sql_execute(sql)
+    mytable = []
+    html = requests.get(
+        'https://www.dohod.ru/ik/analytics/dividend', headers)
+    soup = BeautifulSoup(
+        html.content, 'html.parser')  # парсер HTML
+    # Ищем div блок с содержимым
+    table = soup.findAll('table')[0]
+    tbody = table.find('tbody')
+    rows = tbody.find_all('tr')
+    for row in rows:
+        cols = row.find_all('td')
+        cols = [ele.text.strip() for ele in cols]
+        mytable.append([ele for ele in cols if ele])
+    for _ in mytable:
+        sql = "INSERT INTO dividend_calendar (ticket_name, sector, period, payment_forecast, currency, payout_yield, closing_date_of_the_register, capitalization, DSI, TEXT, ticket_name_rus) VALUES({0}, {1},{2},{3},{4},{5},{6},{7},{8},{9},{10})".format(
+            """'""" + _[18] + """'""",  """'""" +
+            _[1] + """'""", """'""" + _[2] + """'""",
+            """'""" + _[3] + """'""", """'""" + _[4] +
+            """'""", """'""" + _[5] + """'""",
+            """'""" + _[7] + """'""", """'""" + _[8] +
+            """'""", """'""" + _[9] + """'""",
+            """'""" + _[15] + """'""", """'""" + _[0] + """'""")
+        sql_execute(sql)
+
 # User input thread
+
+
 def UserInput():
     global sell_pr, buy_pr, select, hat, fig_to_show, graph_period
     while True:
@@ -292,6 +321,8 @@ def UserInput():
             case 'G':
                 graph_period = input('Period?:')
                 refrasher()
+            case 'U':
+                update_divident_calendar()
 
 
 # Selecter: Print table depending on select
@@ -311,13 +342,8 @@ def printing():
                 if print_st2:
                     os.system("clear")
                     print(hat)
-                    #html = requests.get('https://open-broker.ru/analytics/dividend-calendar/', headers)
-                    # soup = BeautifulSoup(html.content, 'html.parser')  # парсер HTML
-                    # Ищем table блок с содержимым
-                    # convert = soup.findAll('table', {
-                    #                       'class': 'DividendCalendarTable_table__qX1ZS Table_table__fI87O Table_table--l__1LdnF'})
-                    # print(convert)
-
+                    # update_divident_calendar() сделать вывод
+                    print_st2 = False
             case 3:  # Print fig
                 if print_st:
                     os.system("clear")
