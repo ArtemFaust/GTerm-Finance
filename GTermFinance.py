@@ -21,7 +21,7 @@ table = None
 print_st = False
 print_st2 = True
 figs = {}
-graph_period = '1m'
+graph_period = '1d'
 fig_to_show = None
 
 # Color
@@ -37,25 +37,9 @@ hat = str(B+"G"+R+'o'+Y+'o'+B+'g'+G+'l'+R+'e'+Y+" Finanse"+N+"\n Input settings:
           ' Tickets config: '+'|'+Y+'A'+N+' - add new ticket|'+' |'+Y+'D'+N+' - delete ticket| |select view:' + Y+' 1, 2, 3'+N+'|'+Y+' G'+N+' - Graph period: %s ' % graph_period + '(1d, 3d, 1m)\n' +
             Y+' T'+N+' - set ticket to graph')
 print(hat)
-# Считываем индексы из файла и формируем список ссылок
 
-
-def getUrl():
-    global tickets
-    tickets = {}
-    data = open('data.txt', 'r')  # Фаил индексов акий
-    for i in data.read().split('\n'):
-        if i != '':
-            tickets[i] = "https://www.google.com/finance/quote/" + i + \
-                ":MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw"
-    data.close()
-
-
-getUrl()
 
 # функция Выполнение sql запроса для получения полей тикетов
-
-
 def sql_execute(sql):
     sqlite_connection = sqlite3.connect('ticket.db')
     cursor = sqlite_connection.cursor()
@@ -66,6 +50,20 @@ def sql_execute(sql):
     sqlite_connection.close()
     sqlite_connection = None
     return rows
+
+
+def getUrl():
+    global tickets
+    tickets = {}
+    # data = open('data.txt', 'r')  # Фаил индексов акий
+    data = sql_execute(sql="select * from Tickets;")
+    for i in data:
+        if i != '':
+            tickets[i[0]] = "https://www.google.com/finance/quote/" + i[0] + \
+                ":MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw"
+
+
+getUrl()
 
 
 # Заголовок эмуляции браузера
@@ -101,7 +99,7 @@ def update_ticker():
         for _ in range(3):  # 3 попытки получния данных
             if atempt:
                 try:
-                    html = requests.get(tickets[i], headers)
+                    html = requests.get(tickets[i], headers, timeout=2)
                     soup = BeautifulSoup(
                         html.content, 'html.parser')  # парсер HTML
                     # Ищем div блок с содержимым значения индекса акции
@@ -119,7 +117,7 @@ def update_ticker():
                                RangePerYear, "    *    ", "   ~  ", dividend_yield, '📈🐄 or 🐻📉'])
                     atempt = False  # Если данные получины прекращаем попытки по данному тикету
                     # Встанвка данных в БД
-                    if tz == '+3':
+                    if tz == '+03' or tz == 'MSK':
                         if datetime.datetime.now().hour < 19 and float(str(datetime.datetime.now().hour) + '.' + str(datetime.datetime.now().minute)) > 9.30:
                             try:
                                 if "," in price:
@@ -154,7 +152,7 @@ def update_ticker():
         table = PrettyTable(th)
         x = 0
         for i in td:
-            if cache != [] and i[1] != '-' and cache[x][1].split("m")[0] != '-':
+            if cache != [] and cache[x][1].split("m")[0] != '-' and len(td) == len(cache):
                 try:
                     if "," in i[1]:
                         i[1] = i[1].split(",")[0] + "." + \
@@ -202,19 +200,22 @@ def update_ticker():
                                 str(i[0]), str(datetime.datetime.now().year), str(datetime.datetime.now().month), str(datetime.datetime.now().day))
                         elif graph_period == '3d':
                             sql = """select * from ticket_data where TicketName = '{0}' and Year = '{1}' and Month = '{2}' and Day = '{3}' and Day = '{4}' and Day = '{5}';""".format(
-                                str(i[0]), str(datetime.datetime.now().year), str(datetime.datetime.now().month), str(datetime.datetime.now().day-2), 
+                                str(i[0]), str(datetime.datetime.now().year), str(
+                                    datetime.datetime.now().month), str(datetime.datetime.now().day-2),
                                 str(datetime.datetime.now().day-1), str(datetime.datetime.now().day))
                         elif graph_period == '1m':
                             sql = """select * from ticket_data where TicketName = '{0}' and Year = '{1}' and Month = '{2}';""".format(
                                 str(i[0]), str(datetime.datetime.now().year), str(datetime.datetime.now().month))
                         rows = sql_execute(sql)
                         all_day_value_list = []
+                        all_datas = []
                         for _ in rows:
                             all_day_value_list.append(list(_)[7])
+                            all_datas.append(datetime.datetime(
+                                int(list(_)[1]), int(list(_)[2]), int(list(_)[3]), int(list(_)[4])-3, int(list(_)[5]), int(list(_)[6])).strftime("%d/%m/%Y %H:%M:%S"))
 
                         # Данные для графика
-                        figs[i[0]] = [all_day_value_list]
-
+                        figs[i[0]] = [all_day_value_list, all_datas]
                         table.add_row(i)
                     else:
                         i[6] = '    *    '
@@ -263,28 +264,23 @@ def UserInput():
                 buy_pr = 45
                 refrasher()
             case 'A':
-                data = open('data.txt', 'a')
-                data.write("\n"+input('Input ticket:').upper())
-                data.close()
+                tickname = input('Input ticket:').upper()
+                sql = "select * from Tickets;"
+                rows = sql_execute(sql)
+                sp = []
+                for _ in rows:
+                    sp.append(_[0])
+                if tickname not in sp:
+                    sql = "INSERT INTO Tickets (name) VALUES ({0});".format(
+                        """'""" + tickname + """'""")
+                    sql_execute(sql)
+                else:
+                    print('Ticket already exists!')
             case "D":
                 ticketToDel = input('Input del ticket:').upper()
-                data = open('data.txt', 'r')
-                old_data = data.read()
-                data.close()
-                old_data = old_data.split('\n')
-                new_data = []
-                if ticketToDel in old_data:
-                    for i in old_data:
-                        if i != '' and i != ticketToDel:
-                            new_data.append(i)
-                    data = open('data.txt', 'w+')
-                    for i in new_data:
-                        data.write(i+'\n')
-                    data.close()
-                    new_data = []
-                    old_data = []
-                else:
-                    print('Nothing to del')
+                sql = "delete from Tickets WHERE name={0};".format(
+                    """'""" + ticketToDel + """'""")
+                sql_execute(sql)
             case '1':
                 select = 1
             case '2':
@@ -310,7 +306,7 @@ def printing():
                     print(hat)
                     print(table)
                     print_st = False
-            
+
             case 2:  # Print divident calendar table
                 if print_st2:
                     os.system("clear")
@@ -333,12 +329,10 @@ def printing():
                         print('Ticket: ' + Y+fig_to_show+N+' lenght: ' +
                               str(len(fig[0])) + ' price: ' + str(fig[0][-1]))
                         import plotext as plt
-                        all = fig[0]
-                        # all.reverse()
-
+                        plt.date_form('d/m/Y H:M:S')
                         plt.plot_size(width=os.get_terminal_size().columns, height=os.get_terminal_size(
                         ).lines - 6)
-                        plt.plot(all)
+                        plt.plot(fig[1], fig[0])
                         plt.theme('clear')
                         plt.show()
                         plt.cld()
