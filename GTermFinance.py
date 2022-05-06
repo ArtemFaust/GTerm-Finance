@@ -17,6 +17,7 @@ buy_pr = 25
 sell_pr = 85
 
 select = 1  # Select print table
+select_old = 1
 table = None
 print_st = False
 print_st2 = True
@@ -89,7 +90,7 @@ def update_ticker():
     # Формируем таблицу
     th = ["Name", "Price", "¤", "%",
           "UpdateTime", 'RangePerYear', 'Action', "   ~  ", "DY", ' 📈 TL 📉 ']
-    table = PrettyTable(th)
+    #table = PrettyTable(th)
     td = []
     # Получаем данные по ссылкам
     getUrl()
@@ -148,7 +149,7 @@ def update_ticker():
                               str(ex) + ' line 109' + '\n\n\n')
                     log.close()
 
-    # Создаем таблицу
+        # Создаем таблицу
         table = PrettyTable(th)
         x = 0
         for i in td:
@@ -233,35 +234,44 @@ def update_ticker():
 
 
 def update_divident_calendar():
-    sql = """delete from dividend_calendar;"""
-    sql_execute(sql)
     mytable = []
-    html = requests.get(
-        'https://www.dohod.ru/ik/analytics/dividend', headers)
-    soup = BeautifulSoup(
-        html.content, 'html.parser')  # парсер HTML
-    # Ищем div блок с содержимым
-    table = soup.findAll('table')[0]
-    tbody = table.find('tbody')
-    rows = tbody.find_all('tr')
-    for row in rows:
-        cols = row.find_all('td')
-        cols = [ele.text.strip() for ele in cols]
-        mytable.append([ele for ele in cols if ele])
-    for _ in mytable:
-        sql = "INSERT INTO dividend_calendar (ticket_name, sector, period, payment_forecast, currency, payout_yield, closing_date_of_the_register, capitalization, DSI, TEXT, ticket_name_rus) VALUES({0}, {1},{2},{3},{4},{5},{6},{7},{8},{9},{10})".format(
-            """'""" + _[18] + """'""",  """'""" +
-            _[1] + """'""", """'""" + _[2] + """'""",
-            """'""" + _[3] + """'""", """'""" + _[4] +
-            """'""", """'""" + _[5] + """'""",
-            """'""" + _[7] + """'""", """'""" + _[8] +
-            """'""", """'""" + _[9] + """'""",
-            """'""" + _[15] + """'""", """'""" + _[0] + """'""")
-        sql_execute(sql)
+    st = True
+    for _ in range(3):
+        if st:
+            try:
+                html = requests.get(
+                    'https://www.dohod.ru/ik/analytics/dividend', headers, timeout=2)
+                st = False
+                sql = """delete from dividend_calendar;"""
+                sql_execute(sql)
+                soup = BeautifulSoup(
+                    html.content, 'html.parser')  # парсер HTML
+                # Ищем div блок с содержимым
+                table = soup.findAll('table')[0]
+                tbody = table.find('tbody')
+                rows = tbody.find_all('tr')
+                for row in rows:
+                    cols = row.find_all('td')
+                    cols = [ele.text.strip() for ele in cols]
+                    mytable.append([ele for ele in cols if ele])
+                for _ in mytable:
+                    sql = "INSERT INTO dividend_calendar (ticket_name, sector, period, payment_forecast, currency, payout_yield, closing_date_of_the_register, capitalization, DSI, TEXT, ticket_name_rus) VALUES({0}, {1},{2},{3},{4},{5},{6},{7},{8},{9},{10})".format(
+                        """'""" + _[18] + """'""",  """'""" +
+                        _[1] + """'""", """'""" + _[2] + """'""",
+                        """'""" + _[3] + """'""", """'""" + _[4] +
+                        """'""", """'""" + _[5] + """'""",
+                        """'""" + _[7] + """'""", """'""" + _[8] +
+                        """'""", """'""" + _[9] + """'""",
+                        """'""" + _[15] + """'""", """'""" + _[0] + """'""")
+                    sql_execute(sql)
+            except Exception as ex:
+                log = open('log.txt', 'a')
+                log.write(str(type(ex)) + '\n' +
+                          str(ex) + ' line 243' + '\n\n\n')
+                log.close()
+
 
 # User input thread
-
-
 def UserInput():
     global sell_pr, buy_pr, select, hat, fig_to_show, graph_period
     while True:
@@ -327,7 +337,7 @@ def UserInput():
 
 # Selecter: Print table depending on select
 def printing():
-    global print_st, print_st2, table, hat, figs, fig_to_show
+    global print_st, print_st2, table, hat, figs, fig_to_show, select_old
     while True:
         time.sleep(0.5)
         match select:
@@ -337,14 +347,39 @@ def printing():
                     print(hat)
                     print(table)
                     print_st = False
+                    select_old = 1
 
             case 2:  # Print divident calendar table
+                if select_old != 2:
+                    select_old = 2
+                    print_st2 = True
                 if print_st2:
                     os.system("clear")
                     print(hat)
-                    # update_divident_calendar() сделать вывод
+                    # Формируем таблицу
+                    th = ["Name", "Sector", "Period", "Payment",
+                          "Currency", 'Payout', 'Closing register day', "Capitalization", "DST"]
+                    td = []
+                    table_1 = PrettyTable(th)
+                    sql = """SELECT * FROM Tickets;"""
+                    tickets = sql_execute(sql)
+                    for _ in list(tickets):   
+                                         
+                        sql = """SELECT * FROM dividend_calendar WHERE ticket_name={0};""".format("""'"""+_[0].lower()+"""'""")
+                        rows = sql_execute(sql)
+                        for _ in rows:
+                            td.append([list(_)[0].upper(), list(_)[1], list(_)[2], list(_)[3], list(_)[4],
+                                  list(_)[5], list(_)[6], list(_)[7], list(_)[8]])
+                    
+                    for _ in td:
+                        table_1.add_row(_)
+                    print(table_1)
                     print_st2 = False
+
+
             case 3:  # Print fig
+                if select_old != 3:
+                    print_st = True
                 if print_st:
                     os.system("clear")
                     print(hat)
@@ -370,6 +405,7 @@ def printing():
                                   str(ex) + ' line 315' + '\n\n\n')
                         log.close()
                     print_st = False
+                    select_old = 3
 
 
 # Threads

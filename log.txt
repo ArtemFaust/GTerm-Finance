@@ -1,4265 +1,937 @@
-<class 'IndexError'>
-list index out of range line 315
+<class 'requests.exceptions.ConnectTimeout'>
+HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/AFLT:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x110d64250>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
 
 
 <class 'ValueError'>
-could not convert string to float: '1,086.00' line 204
+could not convert string to float: '1,093.60' line 204
 
 
 <class 'ValueError'>
-could not convert string to float: '1,086.00' line 204
+could not convert string to float: '1,093.60' line 204
 
 
 <class 'ValueError'>
-could not convert string to float: '1,086.00' line 204
+could not convert string to float: '1,093.60' line 204
 
 
 <class 'ValueError'>
-could not convert string to float: '1,086.00' line 204
+could not convert string to float: '1,093.60' line 204
 
 
 <class 'ValueError'>
-could not convert string to float: '1,086.00' line 204
+could not convert string to float: '1,093.60' line 204
 
 
 <class 'ValueError'>
-could not convert string to float: '1,086.00' line 204
+could not convert string to float: '1,093.60' line 204
 
 
 <class 'ValueError'>
-could not convert string to float: '1,086.00' line 204
+could not convert string to float: '1,093.60' line 204
 
 
 <class 'ValueError'>
-could not convert string to float: '1,086.00' line 204
+could not convert string to float: '1,093.60' line 204
 
 
 <class 'ValueError'>
-could not convert string to float: '1,086.00' line 204
+could not convert string to float: '1,093.60' line 204
 
 
 <class 'ValueError'>
-could not convert string to float: '1,086.00' line 204
+could not convert string to float: '1,093.60' line 204
 
 
 <class 'ValueError'>
-could not convert string to float: '1,086.00' line 204
-
-
-<class 'KeyError'>
-'SBER' line 315
+could not convert string to float: '1,093.60' line 204
 
 
 <class 'ValueError'>
-could not convert string to float: '1,087.00' line 204
+could not convert string to float: '1,093.60' line 204
 
 
 <class 'ValueError'>
-could not convert string to float: '1,087.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,087.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,087.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,087.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,087.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,087.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,087.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,087.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,087.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,087.00' line 204
+could not convert string to float: '1,093.60' line 204
 
 
 <class 'IndexError'>
-list index out of range line 315
+list index out of range line 109
 
 
-<class 'KeyError'>
-'1D' line 315
+<class 'IndexError'>
+list index out of range line 109
 
 
-<class 'KeyError'>
-'1D' line 315
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'ValueError'>
+could not convert string to float: '1,093.60' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,093.60' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,093.60' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,093.60' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,093.60' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,093.60' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,093.60' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,093.60' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,093.60' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,093.60' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,093.60' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,093.60' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,093.60' line 204
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'ValueError'>
+could not convert string to float: '1,093.60' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,093.60' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,093.60' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,093.60' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,093.60' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,093.60' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,093.60' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,093.60' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,093.60' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,093.60' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,093.60' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,093.60' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,093.60' line 204
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'ValueError'>
+could not convert string to float: '1,098.00' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,098.00' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,098.00' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,098.00' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,098.00' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,098.00' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,098.00' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,098.00' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,098.00' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,098.00' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,098.00' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,098.00' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,098.00' line 204
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'ValueError'>
+could not convert string to float: '1,098.00' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,098.00' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,098.00' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,098.00' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,098.00' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,098.00' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,098.00' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,098.00' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,098.00' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,098.00' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,098.00' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,098.00' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,098.00' line 204
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'ValueError'>
+could not convert string to float: '1,098.00' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,098.00' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,098.00' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,098.00' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,098.00' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,098.00' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,098.00' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,098.00' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,098.00' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,098.00' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,098.00' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,098.00' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,098.00' line 204
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
 
 
 <class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/SNGS:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x109137be0>, 'Connection to www.google.com timed out. (connect timeout=None)')) line 109
+HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/GAZP:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x11379feb0>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
 
 
 <class 'IndexError'>
-list index out of range line 315
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.00' line 204
+list index out of range line 109
 
 
 <class 'IndexError'>
-list index out of range line 315
+list index out of range line 109
 
 
 <class 'IndexError'>
-list index out of range line 315
+list index out of range line 109
 
 
 <class 'IndexError'>
-list index out of range line 315
+list index out of range line 109
 
 
 <class 'IndexError'>
-list index out of range line 315
+list index out of range line 109
 
 
 <class 'IndexError'>
-list index out of range line 315
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.00' line 204
+list index out of range line 109
 
 
 <class 'IndexError'>
-list index out of range line 315
+list index out of range line 109
 
 
 <class 'IndexError'>
-list index out of range line 315
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.00' line 204
-
-
-<class 'ValueError'>
-Date Form should be: %d/%m/%Y line 315
+list index out of range line 109
 
 
 <class 'IndexError'>
-list index out of range line 315
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.20' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.20' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.20' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.20' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.20' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.20' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.20' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.20' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.20' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.20' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.20' line 204
+list index out of range line 109
 
 
 <class 'IndexError'>
-list index out of range line 315
+list index out of range line 109
 
 
-<class 'ValueError'>
-could not convert string to float: '1,090.20' line 204
+<class 'IndexError'>
+list index out of range line 109
 
 
-<class 'ValueError'>
-could not convert string to float: '1,090.20' line 204
+<class 'IndexError'>
+list index out of range line 109
 
 
-<class 'ValueError'>
-could not convert string to float: '1,090.20' line 204
+<class 'IndexError'>
+list index out of range line 109
 
 
-<class 'ValueError'>
-could not convert string to float: '1,090.20' line 204
+<class 'IndexError'>
+list index out of range line 109
 
 
-<class 'ValueError'>
-could not convert string to float: '1,090.20' line 204
+<class 'IndexError'>
+list index out of range line 109
 
 
-<class 'ValueError'>
-could not convert string to float: '1,090.20' line 204
+<class 'IndexError'>
+list index out of range line 109
 
 
-<class 'ValueError'>
-could not convert string to float: '1,090.20' line 204
+<class 'IndexError'>
+list index out of range line 109
 
 
-<class 'ValueError'>
-could not convert string to float: '1,090.20' line 204
+<class 'IndexError'>
+list index out of range line 109
 
 
-<class 'ValueError'>
-could not convert string to float: '1,090.20' line 204
+<class 'IndexError'>
+list index out of range line 109
 
 
-<class 'ValueError'>
-could not convert string to float: '1,090.20' line 204
+<class 'IndexError'>
+list index out of range line 109
 
 
-<class 'ValueError'>
-could not convert string to float: '1,090.20' line 204
+<class 'IndexError'>
+list index out of range line 109
 
 
-<class 'ValueError'>
-Date Form should be: %d/%m/%Y line 315
+<class 'IndexError'>
+list index out of range line 109
 
 
-<class 'ValueError'>
-Date Form should be: %d/%m/%Y line 315
+<class 'IndexError'>
+list index out of range line 109
 
 
-<class 'ValueError'>
-Date Form should be: %d/%m/%Y line 315
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
 
 
 <class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/SBER:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10fe6e6e0>, 'Connection to www.google.com timed out. (connect timeout=None)')) line 109
+HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/IRAO:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x118389b70>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 109
+
+
+<class 'IndexError'>
+list index out of range line 315
+
+
+<class 'IndexError'>
+list index out of range line 315
+
+
+<class 'IndexError'>
+list index out of range line 315
+
+
+<class 'ValueError'>
+could not convert string to float: '1,097.40' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,097.40' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,097.40' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,097.40' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,097.40' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,097.40' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,097.40' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,097.40' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,097.40' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,097.40' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,097.40' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,097.40' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,097.40' line 204
+
+
+<class 'IndexError'>
+list index out of range line 315
+
+
+<class 'ValueError'>
+could not convert string to float: '1,097.60' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,097.60' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,097.60' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,097.60' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,097.60' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,097.60' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,097.60' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,097.60' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,097.60' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,097.60' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,097.60' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,097.60' line 204
+
+
+<class 'ValueError'>
+could not convert string to float: '1,097.60' line 204
 
 
 <class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/ALRS:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x11186c4f0>, 'Connection to www.google.com timed out. (connect timeout=None)')) line 109
+HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/MGNT:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10e67b490>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
 
 
 <class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/MTSS:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10a7e8220>, 'Connection to www.google.com timed out. (connect timeout=None)')) line 109
-
-
-<class 'IndexError'>
-list index out of range line 315
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.40' line 204
-
-
-<class 'ValueError'>
-Date Form should be: %d/%m/%Y line 315
+HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/GMKN:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x115281390>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
 
 
 <class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/IRAO:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10956d510>, 'Connection to www.google.com timed out. (connect timeout=None)')) line 109
-
-
-<class 'ValueError'>
-Date Form should be: %d/%m/%Y line 315
-
-
-<class 'ValueError'>
-Date Form should be: %d/%m/%Y line 315
-
-
-<class 'ValueError'>
-Date Form should be: %d/%m/%Y line 315
-
-
-<class 'ValueError'>
-Date Form should be: %d/%m/%Y line 315
-
-
-<class 'IndexError'>
-list index out of range line 315
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.40' line 204
-
-
-<class 'ValueError'>
-Date Form should be: %d/%m/%Y line 315
-
-
-<class 'ValueError'>
-Date Form should be: %d/%m/%Y line 315
-
-
-<class 'ValueError'>
-Date Form should be: %d/%m/%Y line 315
-
-
-<class 'ValueError'>
-Date Form should be: %d/%m/%Y line 315
-
-
-<class 'ValueError'>
-Date Form should be: %d/%m/%Y line 315
-
-
-<class 'ValueError'>
-Date Form should be: %d/%m/%Y line 315
-
-
-<class 'IndexError'>
-list index out of range line 315
+HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/MGNT:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x11824e6e0>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
 
 
 <class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/VTBR:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x107e01a20>, 'Connection to www.google.com timed out. (connect timeout=None)')) line 109
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.40' line 204
-
-
-<class 'ValueError'>
-Date Form should be: %d/%m/%Y line 315
-
-
-<class 'IndexError'>
-list index out of range line 315
+HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/CHMF:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x11735e8c0>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
 
 
 <class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/GAZP:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10ced57b0>, 'Connection to www.google.com timed out. (connect timeout=None)')) line 109
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,090.00' line 204
-
-
-<class 'ValueError'>
-Date Form should be: %d/%m/%Y line 315
-
-
-<class 'IndexError'>
-list index out of range line 315
-
-
-<class 'TypeError'>
-'str' object cannot be interpreted as an integer line 204
-
-
-<class 'TypeError'>
-'str' object cannot be interpreted as an integer line 204
-
-
-<class 'TypeError'>
-'str' object cannot be interpreted as an integer line 204
-
-
-<class 'TypeError'>
-'str' object cannot be interpreted as an integer line 204
-
-
-<class 'TypeError'>
-'str' object cannot be interpreted as an integer line 204
-
-
-<class 'TypeError'>
-'str' object cannot be interpreted as an integer line 204
-
-
-<class 'TypeError'>
-'str' object cannot be interpreted as an integer line 204
-
-
-<class 'TypeError'>
-'str' object cannot be interpreted as an integer line 204
-
-
-<class 'TypeError'>
-'str' object cannot be interpreted as an integer line 204
-
-
-<class 'TypeError'>
-'str' object cannot be interpreted as an integer line 204
-
-
-<class 'TypeError'>
-'str' object cannot be interpreted as an integer line 204
-
-
-<class 'TypeError'>
-'str' object cannot be interpreted as an integer line 204
-
-
-<class 'TypeError'>
-'str' object cannot be interpreted as an integer line 204
-
-
-<class 'TypeError'>
-'str' object cannot be interpreted as an integer line 204
-
-
-<class 'TypeError'>
-'str' object cannot be interpreted as an integer line 204
-
-
-<class 'IndexError'>
-list index out of range line 315
-
-
-<class 'IndexError'>
-list index out of range line 315
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'IndexError'>
-list index out of range line 315
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'IndexError'>
-list index out of range line 315
-
-
-<class 'IndexError'>
-list index out of range line 315
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'IndexError'>
-list index out of range line 315
-
-
-<class 'IndexError'>
-list index out of range line 315
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'IndexError'>
-list index out of range line 315
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'IndexError'>
-list index out of range line 315
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'IndexError'>
-list index out of range line 315
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'IndexError'>
-list index out of range line 315
-
-
-<class 'IndexError'>
-list index out of range line 315
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'IndexError'>
-list index out of range line 315
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'IndexError'>
-list index out of range line 315
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'IndexError'>
-list index out of range line 315
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'IndexError'>
-list index out of range line 315
-
-
-<class 'IndexError'>
-list index out of range line 315
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'IndexError'>
-list index out of range line 315
-
-
-<class 'IndexError'>
-list index out of range line 315
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'IndexError'>
-list index out of range line 315
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'IndexError'>
-list index out of range line 315
-
-
-<class 'IndexError'>
-list index out of range line 315
+HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/MOEX:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x11745aa70>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
 
 
 <class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/LKOH:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10f54ba60>, 'Connection to www.google.com timed out. (connect timeout=None)')) line 109
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'IndexError'>
-list index out of range line 315
-
-
-<class 'IndexError'>
-list index out of range line 315
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'IndexError'>
-list index out of range line 315
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'IndexError'>
-list index out of range line 315
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'IndexError'>
-list index out of range line 315
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'IndexError'>
-list index out of range line 315
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'IndexError'>
-list index out of range line 315
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'IndexError'>
-list index out of range line 315
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'IndexError'>
-list index out of range line 315
-
-
-<class 'IndexError'>
-list index out of range line 315
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'IndexError'>
-list index out of range line 315
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'IndexError'>
-list index out of range line 315
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'IndexError'>
-list index out of range line 315
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'IndexError'>
-list index out of range line 315
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'IndexError'>
-list index out of range line 315
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/IRAO:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x106d82140>, 'Connection to www.google.com timed out. (connect timeout=None)')) line 109
-
-
-<class 'IndexError'>
-list index out of range line 315
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'IndexError'>
-list index out of range line 315
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'IndexError'>
-list index out of range line 315
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'IndexError'>
-list index out of range line 315
-
-
-<class 'ValueError'>
-could not convert string to float: '1,089.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,089.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,089.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,089.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,089.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,089.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,089.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,089.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,089.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,089.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,089.00' line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'IndexError'>
-list index out of range line 315
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'IndexError'>
-list index out of range line 315
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-day is out of range for month line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,089.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,089.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,089.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,089.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,089.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,089.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,089.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,089.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,089.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,089.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,089.80' line 204
-
-
-<class 'IndexError'>
-list index out of range line 315
-
-
-<class 'ValueError'>
-could not convert string to float: '1,089.20' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,089.20' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,089.20' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,089.20' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,089.20' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,089.20' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,089.20' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,089.20' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,089.20' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,089.20' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,089.20' line 204
-
-
-<class 'ValueError'>
-Date Form should be: %d/%m/%Y line 315
-
-
-<class 'IndexError'>
-list index out of range line 315
-
-
-<class 'ValueError'>
-could not convert string to float: '1,089.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,089.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,089.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,089.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,089.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,089.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,089.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,089.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,089.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,089.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,089.80' line 204
-
-
-<class 'ValueError'>
-Date Form should be: %d/%m/%Y line 315
-
-
-<class 'ValueError'>
-could not convert string to float: '1,089.20' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,089.20' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,089.20' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,089.20' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,089.20' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,089.20' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,089.20' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,089.20' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,089.20' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,089.20' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,089.20' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,092.60' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,092.60' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,092.60' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,092.60' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,092.60' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,092.60' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,092.60' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,092.60' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,092.60' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,092.60' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,092.60' line 204
-
-
-<class 'IndexError'>
-list index out of range line 315
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.00' line 204
-
-
-<class 'IndexError'>
-list index out of range line 315
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.00' line 204
-
-
-<class 'IndexError'>
-list index out of range line 315
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.00' line 204
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/GAZP:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x107aa7100>, 'Connection to www.google.com timed out. (connect timeout=None)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/ROSN:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1082c1360>, 'Connection to www.google.com timed out. (connect timeout=None)')) line 109
-
-
-<class 'ValueError'>
-could not convert string to float: '1,091.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,091.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,091.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,091.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,091.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,091.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,091.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,091.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,091.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,091.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,091.00' line 204
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/CHMF:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x109eacc10>, 'Connection to www.google.com timed out. (connect timeout=None)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/TATN:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10d62f130>, 'Connection to www.google.com timed out. (connect timeout=None)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/SBER:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10fec5630>, 'Connection to www.google.com timed out. (connect timeout=None)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/ALRS:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10faab400>, 'Connection to www.google.com timed out. (connect timeout=None)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/MTSS:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x110b5c4c0>, 'Connection to www.google.com timed out. (connect timeout=None)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/SBER:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x113525f60>, 'Connection to www.google.com timed out. (connect timeout=None)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/SBER:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x11559ef50>, 'Connection to www.google.com timed out. (connect timeout=None)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/LKOH:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x11533f940>, 'Connection to www.google.com timed out. (connect timeout=None)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/CHMF:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1056c4220>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/CHMF:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x105767e50>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'ValueError'>
-could not convert string to float: '1,097.20' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,097.20' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,097.20' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,097.20' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,097.20' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,097.20' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,097.20' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,097.20' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,097.20' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,097.20' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,097.20' line 204
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/VTBR:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x108b40850>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/ROSN:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x107d73970>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'IndexError'>
-list index out of range line 315
-
-
-<class 'ValueError'>
-could not convert string to float: '1,095.20' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,095.20' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,095.20' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,095.20' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,095.20' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,095.20' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,095.20' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,095.20' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,095.20' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,095.20' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,095.20' line 204
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/SBER:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10f3b89a0>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/MGNT:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x114b9ff10>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'ValueError'>
-could not convert string to float: '1,096.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,096.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,096.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,096.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,096.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,096.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,096.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,096.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,096.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,096.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,096.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,096.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.80' line 204
-
-
-<class 'requests.exceptions.ReadTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Read timed out. (read timeout=2) line 109
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.40' line 204
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/ROSN:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x11427ce80>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.40' line 204
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/CHMF:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10b74afe0>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.40' line 204
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/VTBR:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10a3671f0>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.60' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.60' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.60' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.60' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.60' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.60' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.60' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.60' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.60' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.60' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.60' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.60' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.60' line 204
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/IRAO:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1145462c0>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,093.80' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,094.00' line 204
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/IRAO:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1086262f0>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectionError'>
-HTTPSConnectionPool(host='www.google.com', port=443): Read timed out. line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/MGNT:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10f204880>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'ValueError'>
-could not convert string to float: '1,091.20' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,091.20' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,091.20' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,091.20' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,091.20' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,091.20' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,091.20' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,091.20' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,091.20' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,091.20' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,091.20' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,091.20' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,091.20' line 204
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/ROSN:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x11d11f4c0>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/ALRS:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x123f84940>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/GMKN:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x132145960>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/MGNT:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x131e69750>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/ROSN:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x136e49e70>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/SNGS:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x129acff10>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/GMKN:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x14559ca60>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/LKOH:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x149bf3310>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/SNGS:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x144a481f0>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/IRAO:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x148e75540>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/TATN:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x145657a30>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/ALRS:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1540a2710>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/TATN:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x14ee0a440>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/SBER:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x152196170>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/MTSS:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x150181ea0>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/MTSS:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1582d9fc0>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/SNGS:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x13f01dc00>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/LKOH:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x155948310>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/LKOH:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x148e764a0>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/SNGS:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x167e1f910>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ReadTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Read timed out. (read timeout=2) line 109
+HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/LKOH:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x11cab93c0>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
 
 
 <class 'requests.exceptions.ReadTimeout'>
@@ -4267,610 +939,14 @@ HTTPSConnectionPool(host='www.google.com', port=443): Read timed out. (read time
 
 
 <class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/CHMF:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1601a2a70>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
+HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/AFLT:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x118d72c20>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
 
 
 <class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/SBER:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x15f294250>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
+HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/MTSS:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x11f6385b0>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
 
 
 <class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/CHMF:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1652612a0>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/LKOH:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1700a7d30>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/MTSS:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x182cd1db0>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/VTBR:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x18934dfc0>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/MOEX:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x16943b040>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/AFLT:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x18c059bd0>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/MTSS:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x16967f4f0>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/MTSS:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x16b50d840>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/MOEX:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x178871f00>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/IRAO:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x19f17a9e0>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/AFLT:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x18d52d5a0>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/GAZP:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1895ad780>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/LKOH:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x19e264ca0>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ReadTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Read timed out. (read timeout=2) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/SBER:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x19cc46590>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/CHMF:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1909ed330>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ReadTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Read timed out. (read timeout=2) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/GAZP:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x19cd7b4c0>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/ROSN:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x19944fd60>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/IRAO:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1b1c14130>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/LKOH:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1ab1ee410>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/MOEX:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1b0da0970>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/LKOH:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1ac4527d0>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/SNGS:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1c9767c10>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/LKOH:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1cdbea080>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/ROSN:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1bc298e50>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/ALRS:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1aab75a50>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/MOEX:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1c8c29d20>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/CHMF:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1d8ee5cf0>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/IRAO:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1b11cace0>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/SBER:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1decc5330>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/CHMF:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x16967dc90>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/AFLT:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1f4bf9360>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/MTSS:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1f6ee7520>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectionError'>
-HTTPSConnectionPool(host='www.google.com', port=443): Read timed out. line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/IRAO:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1ec0927a0>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/IRAO:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1f6c86e90>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/TATN:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1ef15ee60>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/CHMF:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1e6493880>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/CHMF:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x204182740>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/TATN:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1bfecd180>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/AFLT:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1a1a957b0>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/ALRS:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1ee9ef5e0>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/ROSN:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x209afc640>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/MTSS:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1a23043d0>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/IRAO:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1c17cfa00>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/ALRS:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x21e309780>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/VTBR:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1d37f76a0>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/AFLT:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x204d84190>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/MGNT:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x22b05d1e0>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/MGNT:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1d8f86170>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/SNGS:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1f512bdc0>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/GAZP:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x107ac8a00>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'ValueError'>
-could not convert string to float: '1,095.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,095.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,095.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,095.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,095.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,095.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,095.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,095.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,095.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,095.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,095.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,095.40' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,095.40' line 204
-
-
-<class 'requests.exceptions.ConnectionError'>
-HTTPSConnectionPool(host='www.google.com', port=443): Read timed out. line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/GAZP:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10879ca00>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/GAZP:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10879d1e0>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/GAZP:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10879d900>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/ROSN:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10879d0f0>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/ROSN:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10879e2c0>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/ROSN:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10b213e80>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/CHMF:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10b3045e0>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/CHMF:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10b213ca0>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/CHMF:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10879df30>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/ALRS:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10879b760>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/ALRS:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10b304640>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/GAZP:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10837c8b0>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/GAZP:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10837b460>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/GAZP:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10ce108b0>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/GAZP:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10ce11090>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/GAZP:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10ce117b0>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/ROSN:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10ce10fa0>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'requests.exceptions.ConnectTimeout'>
-HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/SNGS:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10bf901c0>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
-
-
-<class 'ValueError'>
-could not convert string to float: '1,102.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,102.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,102.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,102.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,102.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,102.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,102.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,102.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,102.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,102.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,102.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,102.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,102.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,102.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,102.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,102.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,102.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,102.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,102.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,102.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,102.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,102.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,102.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,102.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,102.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,102.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,102.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,102.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,102.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,102.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,102.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,102.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,102.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,102.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,102.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,102.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,102.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,102.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,102.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,102.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,102.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,102.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,102.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,102.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,102.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,102.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,102.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,102.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,102.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,102.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,102.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,102.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,102.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,102.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,102.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,102.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,102.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,102.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,102.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,102.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,102.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,102.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,102.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,102.00' line 204
-
-
-<class 'ValueError'>
-could not convert string to float: '1,102.00' line 204
+HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /finance/quote/SBER:MCX?sa=X&ved=2ahUKEwjK5-z-yJLyAhUhpIsKHXbMBh0Q_AUoAXoECAEQAw&user+agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F91.0.4472.135+Safari%2F537.36 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x11c92d720>, 'Connection to www.google.com timed out. (connect timeout=2)')) line 109
 
 
